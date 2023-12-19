@@ -1,0 +1,127 @@
+#general-container{
+    width: 1000px; /* Ancho del contenedor */
+    height: 600px; /* Altura del contenedor */
+    background-color: green;
+    padding: 0px; /* Relleno interno del contenedor */
+    margin: 300px 50px 50px 250px; /* Margen externo del contenedor */
+    position: relative;
+}
+
+#subcontainer-1{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: aqua;
+    display: none;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    
+    
+}
+#subcontainer-2{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: beige;
+    display: none;
+    position: absolute;
+    top: 0; 
+    left: 250px;
+
+}
+#subcontainer-3{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: blueviolet;
+    display: none;
+    position: absolute;
+    top: 0; 
+    left: 500px;
+    
+}
+#subcontainer-4{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color:violet;
+    display: none;
+    position: absolute;
+    top: 0; 
+    left: 750px;
+    
+}
+#subcontainer-5{
+    width: 250px;/* Ancho del contenedor */
+    height: 200px;
+    background-color: yellow;
+    display: none;
+    position: absolute;
+    top: 200px; 
+    left: 0px;
+}
+#subcontainer-6{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: aqua;
+    display: none;
+    position: absolute;
+    top: 200px; 
+    left: 250px;
+}
+#subcontainer-7{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: violet;
+    display: none;
+    position: absolute;
+    top: 200px; 
+    left: 500px;
+}
+#subcontainer-8{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: black;
+    display: none;
+    position: absolute;
+    top: 200px; 
+    left: 750px;
+    
+}
+#subcontainer-9{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: yellowgreen;
+    display: none;
+    position: absolute;
+    top: 400px; 
+    left: 0px;
+    
+}
+#subcontainer-10{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: coral;
+    display: none;
+    position: absolute;
+    top: 400px; 
+    left: 250px;
+    
+}
+#subcontainer-11{
+    width: 250px;/* Ancho del contenedor */
+    height: 200px;
+    background-color: gray;
+    display: none;
+    position: absolute;
+    top: 400px; 
+    left: 500px;
+    
+}
+#subcontainer-12{
+    width: 250px; /* Ancho del contenedor */
+    height: 200px;
+    background-color: skyblue;
+    display: none;
+    position: absolute;
+    top: 400px; 
+    left: 750px;
+    
+}
