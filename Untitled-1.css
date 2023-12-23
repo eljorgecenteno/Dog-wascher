@@ -1,27 +1,63 @@
+body{
+    background-color: #8BF0F5;
+   
+}
+
+.main-screen{
+    display:none;
+}
+
+.first-screen{
+    display:block;
+}
+.last-screen{
+ display: none;
+}
+
+#instructions{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    font-size: 25px;
+    font-family: cursive, Arial, Helvetica, sans-serif; 
+    text-align: center;
+
+}
+
+#go-to-main-screen{
+    background-color:  #FFBD91;
+    padding: 12px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    left: 240px;
+    font-size: 25px;
+}
+
+
 #general-container{
     width: 1000px; /* Ancho del contenedor */
     height: 600px; /* Altura del contenedor */
-    background-color: green;
     padding: 0px; /* Relleno interno del contenedor */
-    margin: 300px 50px 50px 250px; /* Margen externo del contenedor */
+    top: 110px;
+    left: 240px;
     position: relative;
+    border: 5px solid black;
+    background-color: #FFBD91;
+    cursor: url("/Imagenes/Esponja_chica.ico"), auto;
 }
 
 #subcontainer-1{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: aqua;
     display: none;
     position: absolute;
     top: 0; 
     left: 0;
-    
-    
 }
 #subcontainer-2{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: beige;
     display: none;
     position: absolute;
     top: 0; 
@@ -31,7 +67,6 @@
 #subcontainer-3{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: blueviolet;
     display: none;
     position: absolute;
     top: 0; 
@@ -41,7 +76,6 @@
 #subcontainer-4{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color:violet;
     display: none;
     position: absolute;
     top: 0; 
@@ -51,7 +85,6 @@
 #subcontainer-5{
     width: 250px;/* Ancho del contenedor */
     height: 200px;
-    background-color: yellow;
     display: none;
     position: absolute;
     top: 200px; 
@@ -60,7 +93,6 @@
 #subcontainer-6{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: aqua;
     display: none;
     position: absolute;
     top: 200px; 
@@ -69,7 +101,6 @@
 #subcontainer-7{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: violet;
     display: none;
     position: absolute;
     top: 200px; 
@@ -78,7 +109,6 @@
 #subcontainer-8{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: black;
     display: none;
     position: absolute;
     top: 200px; 
@@ -88,7 +118,6 @@
 #subcontainer-9{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: yellowgreen;
     display: none;
     position: absolute;
     top: 400px; 
@@ -98,7 +127,6 @@
 #subcontainer-10{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: coral;
     display: none;
     position: absolute;
     top: 400px; 
@@ -108,7 +136,6 @@
 #subcontainer-11{
     width: 250px;/* Ancho del contenedor */
     height: 200px;
-    background-color: gray;
     display: none;
     position: absolute;
     top: 400px; 
@@ -118,10 +145,66 @@
 #subcontainer-12{
     width: 250px; /* Ancho del contenedor */
     height: 200px;
-    background-color: skyblue;
     display: none;
     position: absolute;
     top: 400px; 
     left: 750px;
     
+}
+.subcontainers img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#Dog-wasched-counter{
+    background-color: #FFBD91;
+    padding: 15px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    left: 800px;
+    font-size: 15px;
+}
+#Dog-missed-counter{
+    background-color: #FFBD91;
+    padding: 15px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 25px;
+    left: 1000px;
+    font-size: 15px;
+}
+
+#start-button{
+    background-color: #ff98f6;
+    padding: 15px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    font-size: 25px;
+}
+
+.last-screen{
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    font-size: 35px;
+    font-family: cursive, Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+
+#go-to-first-screen{
+    background-color:  #FFBD91;
+    padding: 12px; 
+    border: 2px solid black;
+    border-radius: 10px;
+    position: absolute;
+    left: 130px;
+    font-size: 25px;
 }

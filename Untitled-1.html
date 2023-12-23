@@ -7,20 +7,73 @@
     <link rel="stylesheet" href="Untitled-1.css">
 </head>
 <body>
-    <div id="general-container">
-        <div class ="subcontainers" id="subcontainer-1"></div>
-        <div class ="subcontainers" id="subcontainer-2"></div>
-        <div class ="subcontainers" id="subcontainer-3"></div>
-        <div class ="subcontainers" id="subcontainer-4"></div>
-        <div class ="subcontainers" id="subcontainer-5"></div>
-        <div class ="subcontainers" id="subcontainer-6"></div>
-        <div class ="subcontainers" id="subcontainer-7"></div>
-        <div class ="subcontainers" id="subcontainer-8"></div>
-        <div class ="subcontainers" id="subcontainer-9"></div>
-        <div class ="subcontainers" id="subcontainer-10"></div>
-        <div class ="subcontainers" id="subcontainer-11"></div>
-        <div class ="subcontainers" id="subcontainer-12"></div>
+
+<div id ="instructions" class ="first-screen">
+    <h2>Welcome to Ultimate dog wascher!</h2>
+    <p>
+        Intructions: <br> 
+        -Clean dogs by clicking on them <br> 
+        -If you miss more than 2 dogs you will lose<br> 
+        -Clean so many dogs as you can!
+    </p>
+
+<button id = "go-to-main-screen" class="first-screen" type="button">Click to<br>go to game</button>
+    
+</div>
+
+<div id="general-container" class="main-screen">
+        <div class ="subcontainers" id="subcontainer-1">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-2">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-3">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-4">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-5">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-6">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-7">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-8">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-9">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-10">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-11">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
+        <div class ="subcontainers" id="subcontainer-12">
+            <img src="/Imagenes/Perro_limpio.png" alt="Clean dog">
+        </div>
     </div>
-    <script src="Untitled-1.js"></script>
+
+<p id = "Dog-wasched-counter" class="main-screen">Dogs wasched: 0</p> 
+
+<p id ="Dog-missed-counter" class="main-screen">Dogs missed: 0</p>
+
+<button id = "start-button" class="main-screen" type="button">Click to<br>start game</button>
+
+<div class = "last-screen">
+    <p>Dogs must be clean! you lost</p>
+
+    <p id ="final-points">Your score: </p>
+
+    <button id = "go-to-first-screen"  type="button">Click to try again</button>
+</div>
+
+ <script src="Untitled-1.js"></script>
 </body>
 </html>
