@@ -10,33 +10,29 @@ class Game {
 
 
 randomDogContainer(){ 
-    let intervalTime = 1500
-    setInterval(() => { // each x msec, run the funciton
-  
-    intervalTime -= 100
-    
-     document.querySelectorAll('.subcontainers').forEach((element) => {
+    setInterval(() => { // each 750 msec, run the funciton
+        document.querySelectorAll('.subcontainers').forEach((element) => {
             element.style.display = 'none';
         }); //clean the last round if not clicked
 
     let dogMissed = this.dogCounter - this.dogWasched
 
     document.getElementById("Dog-missed-counter").innerHTML = `Dogs missed : ${dogMissed}`
-   //if (dogMissed >= 2) { // set interval to make it the last to happens on the function, so add still the number to hmtl and display:none
-    //    setInterval(()=>{
+   if (dogMissed >= 2) { // set interval to make it the last to happens on the function, so add still the number to hmtl and display:none
+        setInterval(()=>{
 
-  // document.querySelectorAll('.main-screen').forEach(function(element) { // we need for each since we are searching for class, not id and need to itinerate for every element that has this class
-    //            element.style.display = 'none';
-    //       });
+    document.querySelectorAll('.main-screen').forEach(function(element) { // we need for each since we are searching for class, not id and need to itinerate for every element that has this class
+                element.style.display = 'none';
+            });
         
-   // document.querySelectorAll('.last-screen').forEach(function(element) {
-     //           element.style.display = 'block';
-     //      });
+    document.querySelectorAll('.last-screen').forEach(function(element) {
+                element.style.display = 'block';
+            });
     
-  //  document.getElementById("final-points").innerHTML = `Your score: ${this.dogWasched}`
+    document.getElementById("final-points").innerHTML = `Your score: ${this.dogWasched}`
             
-      //  },100); // stops the game and takes you to last screen. 
-     // }
+        },100); // stops the game and takes you to last screen. 
+      }
     let randomNumber = Math.floor(Math.random() * 12) //returns random number between 1 and 12
     
 
@@ -68,7 +64,7 @@ randomDogContainer(){
     this.dogCounter++
     console.log(this.dogCounter)
 
-    }, intervalTime);
+    }, 1500);
 }
 
 clickOnDoggo(){ //  hide the doggo if its clicked and add 1 to the counter of dogs wasched. 
@@ -86,8 +82,6 @@ clickOnDoggo(){ //  hide the doggo if its clicked and add 1 to the counter of do
         });
     });
 }
-
-
 
 }
 
