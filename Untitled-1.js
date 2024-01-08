@@ -4,15 +4,16 @@ class Game {
         this.timer = 30 // timer general game, should go down 30sec
         this.dogWasched = 0 // how many dog you wasched until the moment. VFC
         this.dogCounter = 0  // how many dogs appeared, should not ve vissible for client
-        this.doggo = [] //should habe inside just the dog at the moment
+        this.timer = 1500 // set the time of the dogs appearing
     }
   
 
 
-randomDogContainer(){ 
-    setInterval(() => { // each 750 msec, run the funciton
+randomDogContainer(){  
+    
         document.querySelectorAll('.subcontainers').forEach((element) => {
             element.style.display = 'none';
+
         }); //clean the last round if not clicked
 
     let dogMissed = this.dogCounter - this.dogWasched
@@ -33,6 +34,27 @@ randomDogContainer(){
             
         },100); // stops the game and takes you to last screen. 
       }
+
+/*setInterval(()=>{ //if we click on a cat 
+        let cat = document.querySelectorAll('.cat');
+
+        cat.forEach(function(element){
+            element.addEventListener('click', function() {
+    
+         document.querySelectorAll('.main-screen').forEach(function(element) { 
+                            });
+                        
+         document.querySelectorAll('.last-screen').forEach(function(element) {
+                                element.style.display = 'block';
+                            });
+                    
+        document.getElementById("final-points").innerHTML = `Your score: ${this.dogWasched}`
+                            // stops the game and takes you to last screen.    
+    
+            });
+        }); 
+    
+     })*/
     let randomNumber = Math.floor(Math.random() * 12) //returns random number between 1 and 12
     
 
@@ -62,9 +84,28 @@ randomDogContainer(){
         document.getElementById("subcontainer-12").style.display = 'block'
     }
     this.dogCounter++
-    console.log(this.dogCounter)
 
-    }, 1500);
+    let cat1 = Math.floor(Math.random() * 12)
+    let cat2 = Math.floor(Math.random() * 12)
+
+    /* if (cat1 === randomNumber || cat2 === randomNumber){
+        document.querySelectorAll('.subcontainers').forEach(function(element) { // we need for each since we are searching for class, not id and need to itinerate for every element that has this class
+            element.classList.add("cat")// Adding class cat to the dogi
+            element.classList.remove("subcontainers")
+            console.log("cat")
+        });
+    }*/
+
+
+
+    if (this.timer > 500){ // rest time for setTimeOut until is equal to 500
+        this.timer -= 20 }
+
+    setTimeout(() => { //  Using set time out to call again the function, instead of a interval since we can not gradually decrease the time. 
+        this.randomDogContainer();
+    }, this.timer);
+
+
 }
 
 clickOnDoggo(){ //  hide the doggo if its clicked and add 1 to the counter of dogs wasched. 
@@ -81,6 +122,7 @@ clickOnDoggo(){ //  hide the doggo if its clicked and add 1 to the counter of do
             document.getElementById("Dog-wasched-counter").innerHTML = `Dogs wasched : ${this.dogWasched}` //  shows in html the result of this.dogwasched atm
         });
     });
+
 }
 
 }
@@ -107,6 +149,7 @@ document.getElementById("start-button").onclick = function() { // Start the game
     const tryGame = new Game
 tryGame.randomDogContainer()
 tryGame.clickOnDoggo()
+
 };
 
 document.getElementById("go-to-first-screen").onclick = function() { // Start the game when clicking on the start button
