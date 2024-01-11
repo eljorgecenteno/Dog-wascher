@@ -166,6 +166,7 @@ display:block;
     position: absolute;
     top: 25px;
     left: 800px;
+    font-family: cursive, Arial, Helvetica, sans-serif; 
     font-size: 15px;
 }
 #Dog-missed-counter{
@@ -177,6 +178,7 @@ display:block;
     top: 25px;
     left: 1000px;
     font-size: 15px;
+    font-family: cursive, Arial, Helvetica, sans-serif; 
 }
 
 #start-button{
