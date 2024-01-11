@@ -14,7 +14,7 @@ randomDogContainer(){
         document.querySelectorAll('.subcontainers').forEach((element) => {
             element.style.display = 'none';
             element.classList.remove("cat")
-            element.querySelector('img').src = '/Imagenes/Perro_limpio.png'
+            element.querySelector('img').src = './Images/Perro_limpio.png'
         }); //clean the last round if not clicked
 
     let dogMissed = this.dogCounter - this.dogWasched // Check how many dogs we miss and didnt clean.
@@ -42,7 +42,7 @@ randomDogContainer(){
     let cat = Math.floor(Math.random() * 12) +1
 
     if (cat === randomNumber || cat*2 === randomNumber){
-        document.getElementById(`subcontainer-${randomNumber}`).querySelector('img').src = '/Imagenes/Gato_preview_rev_1.png';
+        document.getElementById(`subcontainer-${randomNumber}`).querySelector('img').src = './Images/Gato_preview_rev_1.png';
         document.getElementById(`subcontainer-${randomNumber}`).classList.add("cat")// Adding class cat to the dogi
         document.getElementById(`subcontainer-${randomNumber}`).style.display = 'block'
     } else {

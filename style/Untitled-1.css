@@ -44,7 +44,7 @@ display:block;
     position: relative;
     border: 5px solid black;
     background-color: #FFBD91;
-    cursor: url("/Imagenes/Esponja_chica.ico"), auto;
+    cursor: url("/Images/Esponja_chica.ico"), auto;
 }
 
 #subcontainer-1{
